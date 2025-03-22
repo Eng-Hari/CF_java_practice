@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 1aa1f938fabb8589f1a790850df1e9d4ae1223f2
 
 public class Square_diff {
 
