@@ -9,13 +9,15 @@ public class Cheach_equals {
 
         if (a.length != b.length) {
             System.out.println("false");
+            return;
         }
         Arrays.sort(a);
         Arrays.sort(b);
-        if (Arrays.equals(a, b)) {
-            System.out.println("true");
-        } else {
-            System.out.println("false");
-        }
+        // if (Arrays.equals(a, b)) {
+        //     System.out.println("true");
+        // } else {
+        //     System.out.println("false");
+        // }
+        System.out.println(Arrays.equals(a, b));
     }
 }

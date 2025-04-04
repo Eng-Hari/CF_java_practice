@@ -11,6 +11,17 @@ public class Sum_of_prime_range {
         int L = sc.nextInt();
         int R = sc.nextInt();
 
+        //validate L and R
+        if (L < 2) {
+            L = 2;
+            // if L=1  => 1 is not prime so we start from 2 to n
+        }
+
+        if (R > n) {
+            R = n;
+            // while n=10 but R=11 => R>n => we set R as nth value R will be 10 not 11 
+        }
+
         //int n=30;
         boolean[] isprime = new boolean[n + 1];
 

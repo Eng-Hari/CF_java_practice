@@ -1,16 +1,18 @@
 package Recursion;
 
-public class Fibnocii_series_memo {
+public class Fibnocii_series_n_memo {
 
     public static void main(String[] args) {
-        int n = 10;
+        int n = 5;
         int[] memo = new int[n + 1];
-        for (int i = 0; i < n; i++) {
-            System.out.println(fibno(i, memo));
-        }
+        System.out.println("The " + n + "th term of fibnocii series is : " + fibno(n, memo));
     }
 
     public static int fibno(int n, int[] memo) {
+
+        if (memo[n] != 0) {
+            return memo[n];
+        }
 
         if (n == 0) {
             return 0;
@@ -19,13 +21,8 @@ public class Fibnocii_series_memo {
             return 1;
         }
 
-        if (memo[n] != 0) {
-            return memo[n];
-        }
-
         memo[n] = fibno(n - 1, memo) + fibno(n - 2, memo);
 
         return memo[n];
     }
-
 }

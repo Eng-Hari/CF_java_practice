@@ -14,8 +14,6 @@ public class Divisior_array {
         if (n % i == 0) {
             System.out.println(i);
         }
-
         divisior(n, i + 1);
     }
-
 }
