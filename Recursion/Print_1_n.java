@@ -18,7 +18,7 @@ package Recursion;
 public class Print_1_n {
 
     public static void main(String[] args) {
-        int n = 10;
+        //    int n = 10;
         print(10);
     }
 

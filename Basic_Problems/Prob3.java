@@ -17,10 +17,11 @@ import java.util.Scanner;
 public class Prob3 {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your mark : ");
-        int mark = sc.nextInt();
-        sc.close();
+        int mark;
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter your mark : ");
+            mark = sc.nextInt();
+        }
         if (mark >= 90) {
             System.out.println("Grade : A");
         } else if (mark >= 80) {

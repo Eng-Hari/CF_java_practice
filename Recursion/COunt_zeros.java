@@ -3,7 +3,7 @@ package Recursion;
 public class COunt_zeros {
 
     public static void main(String[] args) {
-        int n = 2030;
+        // int n = 2030;
         System.out.println(countzero(2030));
     }
 
