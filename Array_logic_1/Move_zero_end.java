@@ -23,6 +23,8 @@ public class Move_zero_end {
 //     }
 // }
 // public class MoveZeroInplace {
+
+// Inplace replacement approach
     public static void main(String[] args) {
         int a[] = {1, 2, 0, 4, 3, 0, 5, 0};
         moveZeroInplace(a);
