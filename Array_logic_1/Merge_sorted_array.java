@@ -1,4 +1,3 @@
-package curiousfreeks_pracrice.Array_logic_1;
 
 import java.util.Arrays;
 
