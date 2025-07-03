@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Parenthesis_cheacker {
 
-    public class Solution {
+    public static class Solution {
 
         // Method to check if the string has balanced brackets
         static boolean isBalanced(String s) {
@@ -14,22 +14,20 @@ public class Parenthesis_cheacker {
                 // Push opening brackets to stack
                 if (ch == '(' || ch == '{' || ch == '[') {
                     stack.push(ch);
-                } // Check for matching closing brackets
-                else {
-                    if (stack.isEmpty()) {
-                        return false;
-                    }
+                } else {
+                    // If stack is empty or mismatched closing bracket
+                    if (stack.isEmpty()) return false;
 
                     char top = stack.pop();
-                    if ((ch == ')' && top != '(')
-                            || (ch == '}' && top != '{')
-                            || (ch == ']' && top != '[')) {
+                    if ((ch == ')' && top != '(') ||
+                        (ch == '}' && top != '{') ||
+                        (ch == ']' && top != '[')) {
                         return false;
                     }
                 }
             }
 
-            // Return true only if stack is empty (all matched)
+            // Return true only if stack is empty (all brackets matched)
             return stack.isEmpty();
         }
 
@@ -38,7 +36,8 @@ public class Parenthesis_cheacker {
             System.out.println(isBalanced("[{()}]"));     // true
             System.out.println(isBalanced("[()()]{}"));   // true
             System.out.println(isBalanced("[({)]"));      // false
+            System.out.println(isBalanced("((()))"));     // true
+            System.out.println(isBalanced("(()"));        // false
         }
     }
-
 }
