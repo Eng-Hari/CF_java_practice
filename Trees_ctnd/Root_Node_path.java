@@ -21,7 +21,7 @@ public class Root_Node_path {
             return false;
         }
 
-        path.add(root.data);  // ✅ Fix: add current node's data
+        path.add(root.data); 
 
         if (root.data == target) {
             return true;
