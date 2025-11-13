@@ -23,3 +23,22 @@ public class Pattern_12 {
         }
     }
 }
+
+
+
+int rows = 2 * n - 1;
+
+for (int i = 1; i <= rows; i++) {
+
+    int level = i <= n ? i : (rows - i + 1);
+
+    int spaces = n - level;
+    int stars = 2 * level - 1;
+
+    StringBuilder sb = new StringBuilder();
+
+    for (int s = 0; s < spaces; s++) sb.append(' ');
+    for (int s = 0; s < stars; s++) sb.append('*');
+
+    System.out.println(sb);
+}
