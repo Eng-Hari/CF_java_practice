@@ -10,6 +10,8 @@ public class GCD {
             System.out.println("Enter the value for b :");
             int b = sc.nextInt();
             int gcd = 1;
+
+            
             for (int i = 1; i <= Math.min(a, b); i++) { // user to find mim no. abong two no.
                 if ((a % i == 0) && (b % i == 0)) {     // getting commom divisior
                     gcd = i;
