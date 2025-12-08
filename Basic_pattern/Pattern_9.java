@@ -17,3 +17,34 @@ public class Pattern_9 {
         }
     }
 }
+
+
+  int i = 1;
+        int j = 1;
+
+        boolean down = false;
+        int total = n * 2 - 1;
+        while (j <= total) {
+            System.out.print("*");
+            i++;
+
+            if (i > (down ? (n - (j - n)) : j)) {
+                System.out.println();
+                i = 1;
+                j++;
+
+                if (j > n) {
+                    down = true;
+                }
+            }
+
+        }
+
+
+*
+**
+***
+****
+***
+**
+*
