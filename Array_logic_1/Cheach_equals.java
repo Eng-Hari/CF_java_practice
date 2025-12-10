@@ -20,7 +20,7 @@ public class Cheach_equals {
         // }
         System.out.println(Arrays.equals(a, b));
     }
-
+//or
 private static boolean check(int[] a, int[] b) {
         if (a.length != b.length) {
             return false;
@@ -48,4 +48,5 @@ private static boolean check(int[] a, int[] b) {
     }
 
 }
+
 
